@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2 {
+    font-family: "Playfair Display", serif;
+}
+
+p {
+    font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header {
+    background: linear-gradient(172deg, rgb(0, 168, 245) 60%, rgba(0, 167, 245, 0.501) 60%, white 61%);
+    padding: 20px 0;
+}
+
+.headerDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.hPfp img {
+    max-width: 500px;
+}
+
+.profile {
+    position: relative;
+}
+
+.profile p {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.aboutmeDiv {
+    background-color: white;
+    margin-right: 20px;
+    width: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+    min-width: 360px;
+}
+
+.aboutmeDiv p {
+    font-size: 1.5rem;
+}
+
+.profileLinksDiv img {
+    width: 25px;
+}
+
+.profileLinksDiv a+a {
+    margin-left: 5px;
+}
+
+.profileLinksDiv {
+    display: flex;
+    justify-content: end;
+}
+
+.myWorkDiv {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1.25rem 0;
+}
+
+.projectList {
+    display: grid;
+    grid-template-columns: minmax(250px, 33%) minmax(250px, 33%) minmax(250px, 33%);
+    grid-auto-rows: 400px;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.cardPic {
+    background-color: rgb(0, 168, 245);
+    height: 70%;
+}
+
+.card {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card img {
+    width: 23px;
+}
+
+.cardNameDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.25rem;
+}
+
+.card p {
+    padding: 0 0.25rem;
+}
+
+footer {
+    background-color: rgb(0, 168, 245);
+    padding: 1rem 0;
+}
+
+.footerDiv {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerPfp {
+    max-width: 550px;
+}
+
+.peImage {
+    width: 20px;
+}
+
+.dirContact {
+    display: flex;
+    align-items: flex-end;
+}
+
+.contactDiv h1 {
+    margin-bottom: 1rem;
+}
+
+.addressDiv {
+    margin: 1rem 0;
+}
+
+.dirContactDiv {
+    margin-bottom: 1rem;
+}
+
+.dirContactDiv p:first-of-type {
+    margin-bottom: 0.5rem;
+}
+
+.footerLinksDiv img {
+    width: 25px;
+}
+
+.footerLinksDiv a+a {
+    margin-left: 20px;
+}
+
+.footerLinksDiv {
+    display: flex;
+}
+
+@media (max-width: 1000px) {
+    .projectList {
+        grid-template-columns: minmax(250px, 50%) minmax(250px, 50%);
+    }
+
+    .headerDiv {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+    .hPfp img {
+        width: 250px;
+        float: left;
+        margin-top: -50px;
+        margin-right: 1.2rem;
+    }
+
+    .aboutmeDiv {
+        margin: 0 auto;
+
+    }
+
+    .footerPfp {
+        width: 400px;
+    }
+}
+
+@media (max-width: 500px) {
+    .projectList {
+        grid-template-columns: 100%;
+    }
+
+    .headerDiv {
+        display: block;
+        width: 95%;
+        margin: 0 auto;
+
+    }
+
+    .hPfp img {
+        width: 100%;
+        float: none;
+        margin-top: 10px;
+    }
+
+    .aboutmeDiv {
+        width: 100%;
+
+    }
+
+    .myWorkDiv {
+        width: 95%;
+    }
+
+    .footerDiv {
+        display: block;
+        width: 95%;
+    }
+
+    .footerPfp {
+        width: 100%;
+    }
+}
